@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BlueCademy</title>
+	<link rel="stylesheet" href="themes/assignment_mcc.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script src="javascripts/detail.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Course Details</h1>
+		</div>
+		
+		<div id="Detail" data-role="content" data-theme="a">
+            <h1 style="text-align:center" id="maincourse_name"></h1>
+			<iframe width="100%"  height="35%" src="" id="video" allowfullscreen></iframe>
+            <p id="course_name"></p>
+            <p id="course_description_name"></p>
+            <input type="submit" value="Add Course" data-icon="plus" id="add" data-iconpos="left" onclick="addCourse()">
+		</div>
+		
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+                    <li><a href="#" data-icon="grid" style="background: grey; color: white" data-theme="a" onclick="mycourse()">My Course</a></li>
+                    <li><a href="#" data-icon="bullets" style="background: grey; color: white" data-theme="a" onclick="homepage()">Home</a></li>
+					<li><a href="#" data-icon="arrow-l" style="background:red ; color: white" data-theme="b" onclick="logout()">Log Out</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+		
+		
+	</div>
+
+	
+</body>
+</html>

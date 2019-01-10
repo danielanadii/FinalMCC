@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="themes/assignment_mcc.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/login.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1 style="font-size: 16pt">BlueCademy</h1>
+		</div>
+
+		<div data-role="content" data-theme="a">
+            <p style="text-align:center ; font-size: 16pt">LOG IN</p>
+			<form id="formLogin" data-ajax="false">
+                <input type="text" id="email" style="text-align:center" placeholder="yourmail@example.com" required>
+				<input type="password" name="Password" id="password" style="text-align:center" placeholder="yourPassword" required>
+				<input type="submit" id="loginButton" value="Login">
+            </form>
+			<a href="/auth/facebook" data-role="button" data-ajax="false">Sign in with Facebook</a>
+			<p style="text-align: center">Don't have an account?</p>
+			<a href="/register"><p style="text-align: center">Register here!</p></a>
+
+		<div data-role="footer" data-theme="a" data-position="fixed">
+			<div data-role="footer" data-theme="b">
+			</div>
+			<div data-role="footer" data-theme="a">
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
